@@ -40,3 +40,5 @@ Manage everything about the hotel: bookings, cabins and guests.
 - Users should be able to define a few application-wide settings: breakfast price, min and max nights/booking, max guests/booking.
 
 - App needs a dark mode.
+
+# Technologies
