@@ -29,14 +29,13 @@ Manage everything about the hotel: bookings, cabins and guests.
 
 � Guest data should contain: full name, email, national ID, nationality, and a country flag for easy identification.
 
-� The initial app screen should be a dashboard, to display important information for the last 7, 30, or 90 days:
-� A list of guests checking in and out on the current day. Users should be able to perform these tasks from here.
+� The initial app screen should be a dashboard, to display important information for the last 7, 30, or 90 days: \* A list of guests checking in and out on the current day. Users should be able to perform these tasks from here.
 
-    � Statistics on recent bookings, sales, check ins, and occupancy rate.
+    * Statistics on recent bookings, sales, check ins, and occupancy rate.
 
-    � A chart showing all daily hotel sales, showing both “total” sales and “extras” sales (only breakfast at the moment).
+    * A chart showing all daily hotel sales, showing both “total” sales and “extras” sales (only breakfast at the moment).
 
-    � A chart showing statistics on stay durations, as this is an important metric for the hotel .
+    * A chart showing statistics on stay durations, as this is an important metric for the hotel .
 
 � Users should be able to define a few application-wide settings: breakfast price, min and max nights/booking, max guests/booking.
 
