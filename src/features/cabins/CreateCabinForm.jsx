@@ -61,7 +61,7 @@ function CreateCabinForm() {
   });
 
   function onSubmit(data) {
-    addCabin(data);
+    addCabin({ ...data, image: data.image[0] });
   }
 
   function onSuccess() {
