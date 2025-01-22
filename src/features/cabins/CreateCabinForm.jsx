@@ -8,10 +8,11 @@ import FormRow from "../../ui/FormRow";
 import { useCreateCabin } from "./useCreateCabin";
 import { useEditCabin } from "./useEditCabin";
 
-function CreateCabinForm({ cabinToEdit }) {
+function CreateCabinForm({ cabinToEdit = {} }) {
   const { isCreating, createCabin } = useCreateCabin();
   const { isEditing, editCabin } = useEditCabin();
   const isWorking = isCreating || isEditing;
+  console.log(cabinToEdit);
 
   const { id: editId, ...editValues } = cabinToEdit;
   const isEditSession = Boolean(editId);
@@ -101,7 +102,7 @@ function CreateCabinForm({ cabinToEdit }) {
           {...register("discount", {
             required: "This field is required.",
             validate: (value) =>
-              value <= getValues().regularPrice ||
+              +value <= +getValues().regularPrice ||
               "Discount should be less than regular price",
           })}
         />

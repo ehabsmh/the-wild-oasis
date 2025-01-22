@@ -40,7 +40,7 @@ function FormRow({ label, error, children }) {
   return (
     <StyledFormRow>
       {label && <Label htmlFor={children.props.id}>{label}</Label>}
-      {children}
+      {children} {/*inputs fields*/}
       {error && <Error>{error}</Error>}
     </StyledFormRow>
   );
